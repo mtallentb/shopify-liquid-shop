@@ -1,1 +1,1 @@
-# shopify-liquid-shop
+# Shopify Shop built with Liquid and Slate
