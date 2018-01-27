@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="{{ settings.color_primary }}">
   <link rel="canonical" href="{{ canonical_url }}">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
   {% if settings.favicon != blank %}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
@@ -31,7 +33,6 @@
   {% endif %}
 
   {% include 'social-meta-tags' %}
-
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
 
   <script>
@@ -63,15 +64,19 @@
 
 <body id="{{ page_title | handle }}" class="template-{{ template.name | handle }}">
 
-  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
-  {% section 'header' %}
 
-  <main role="main" id="MainContent">
-    {{ content_for_layout }}
-  </main>
+    {% section 'header' %}
 
-  {% section 'footer' %}
+    <div class="container">
+      <main role="main" id="MainContent">
+        {{ content_for_layout }}
+      </main>
+    </div>
 
+    {% section 'footer' %}
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
