@@ -8,6 +8,11 @@
  */
 // =require vendor/jquery-2.2.3.min.js
 
+/*!
+ * materialize.min.js
+ */
+// =require  vendor/materialize.min.js
+
 // Attempts to preserve comments that likely contain licensing information,
 // even if the comment does not have directives such as `@license` or `/*!`.
 //
@@ -18,3 +23,6 @@
 // 2. A regular expression matches the string of the comment.
 //    For example: `MIT`, `@license`, or `Copyright`.
 // 3. There is a comment at the *previous* line, and it matches 1, 2, or 3.
+$(document).ready(function () {
+    $('.parallax').parallax();
+});

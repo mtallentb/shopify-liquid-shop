@@ -18,9 +18,15 @@ window.theme = window.theme || {};
 // =require templates/customers-addresses.js
 // =require templates/customers-login.js
 
+/*================ Vendor ====================*/
+// =require vendor.js
+
 $(document).ready(function() {
   var sections = new slate.Sections();
   sections.register('product', theme.Product);
+
+  // Initalizes Materialize Parallax
+  $('.parallax').parallax();
 
   // Common a11y fixes
   slate.a11y.pageLinkFocus($(window.location.hash));

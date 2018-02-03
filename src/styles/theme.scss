@@ -10,11 +10,13 @@
 /*================ SETTINGS ================*/
 @import url('settings/variables.scss.liquid');
 
+/*================ FONTS ===================*/
+@import url('https://fonts.googleapis.com/css?family=Kranky');
+
 /*================ COMMON ================*/
 @import url('global/normalize.scss');
 @import url('global/slate-reset.scss');
 @import url('global/helper-classes.scss');
-@import url('global/grid.scss');
 @import url('global/layout.scss');
 @import url('global/icons.scss');
 @import url('global/rte.scss');
@@ -29,3 +31,14 @@
 
 /*================ MATERIALIZE ============*/
 @import url('vendor/materialize.min.css');
+
+.shop-name {
+  font-family: 'Kranky', cursive;
+  color: black;
+}
+
+.zigzag-hr {
+	height: 6px;
+	background: url('../assets/carat.png') repeat-x 0 0;
+  border: 0;
+}
